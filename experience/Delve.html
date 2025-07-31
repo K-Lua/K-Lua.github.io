@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Civil Networks - Experience</title>
+    <link rel="icon" type="image/png" href="assets/images/klua.png">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        .exp-section {
+            background: #23272a;
+            box-shadow: 0 0 16px rgba(40,44,52,0.2);
+            border-radius: 16px;
+            padding: 24px 20px;
+            margin: 0 0 24px 0;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 700px;
+        }
+        .exp-section h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        .exp-section ul, .exp-section p {
+            margin: 0;
+        }
+        .exp-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+            max-width: 700px;
+        }
+        .exp-header img {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: #181a1b;
+        }
+        .exp-header-content h1 {
+            margin: 0 0 6px 0;
+            font-size: 2rem;
+        }
+        .exp-header-content span {
+            color: #bdbdbd;
+            font-size: 1.1rem;
+        }
+        .exp-footer {
+            margin-top: 32px;
+            text-align: center;
+            width: 100%;
+            max-width: 700px;
+        }
+        @media (max-width: 800px) {
+            .exp-header, .exp-section, .exp-footer {
+                max-width: 98vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Civil Networks</h1>
+        <nav>
+            <ul style="display:flex; align-items:center; gap:18px;">
+                <li><button class="button" onclick="location.href='../index.html'">Home</button></li>
+                <li>
+                    <a href="https://github.com/K-Lua" target="_blank" style="display:inline-block;">
+                        <img src="../assets/images/Github.png" alt="Github" style="width:32px; height:32px; vertical-align:middle;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container" style="align-items: center;">
+        <div class="exp-header">
+            <img src="../assets/images/Delve_Discord_PFP.png" alt="Delve Logo">
+            <div class="exp-header-content">
+                <h1>Delve</h1>
+                <span>Scripter &mdash; Core gameplay systems</span>
+            </div>
+        </div>
+        <section class="exp-section">
+            <h2>About</h2>
+            <p>
+                Working on Delve, As the main scripter. Developing a large amount of systems.
+            </p>
+        </section>
+        <section class="exp-section">
+            <h2>Related Projects</h2>
+            <ul>
+                <li>Inventory System</li>
+                <li>Currency Handler</li>
+                <li>Harvesting / Mining</li>
+                <li>Interaction System</li>
+                <li>Cave Generation</li>
+                <li>Quest System</li>
+                <li>Player List</li>
+                <li>User Groups</li>
+                <li>MainMenu UI</li>
+                <li>NPC System</li>
+                <li>WebHook Handler</li>
+                <li>Admin UI + Systems</li>
+            </ul>
+        </section>
+        <div class="exp-footer">
+            <button class="button" onclick="location.href='../index.html'">Back</button>
+        </div>
+    </main>
+    <footer>
+        <p>Klua's Portfolio</p>
+    </footer>
+</body>
+</html>
