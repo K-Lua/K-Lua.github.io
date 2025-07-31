@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         actions.className = 'card-actions'
         const btn = document.createElement('button')
         btn.className = 'button'
-        btn.textContent = 'View Details'
+        btn.textContent = 'View'
         btn.onclick = function() {
             location.href = 'projects/' + project.file
         }
