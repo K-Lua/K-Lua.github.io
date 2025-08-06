@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
             tech: ['Luau']
         },
         {
+            file: 'CaveGeneration.html',
+            title: 'Cave Generation',
+            desc: 'Procedural cave generation.',
+            img: 'assets/images/Cave.png',
+            tech: ['Luau']
+        },
+        {
             file: 'InteractionHandler.html',
             title: 'Interaction Handler',
             desc: 'Handles player interactions.',
