@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
             tech: ['Luau']
         },
         {
+            file: 'ImguiMenu.html',
+            title: 'Minecraft Fabric Imgui Menu',
+            desc: 'Imgui menu',
+            img: 'assets/images/imguimenu.png',
+            tech: ['Java', 'Kotlin']
+        },
+        {
             file: 'Scp079.html',
             title: 'SCP-079',
             desc: 'SCP-079 is a sentient AI that hacks devices within the facility.',
