@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             company: 'Civil Networks',
-            role: 'Programmer',
+            role: 'Core Developer',
             desc: 'Worked on various projects for Civil Networks. Mainly focused on their SCP RP site 65 and site 9 servers.',
             img: 'assets/images/Civilnetworks.jpg',
             file: 'CivilNetworks.html',
