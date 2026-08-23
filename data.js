@@ -1,6 +1,22 @@
 const DATA = {
   "projects": [
     {
+      "name": "K2",
+      "desc": "K2 is a 2D graphics engine I built for Roblox, rendering full 2D worlds inside a 3D engine. To prove it out, I built a RimWorld-style colony sim on top of it: scenario selection, procedural hex world generation with biomes, and top-down colony gameplay with colonists.",
+      "tags": [
+        "Luau",
+        "2D Engine",
+        "Procedural Generation"
+      ],
+      "yt": "",
+      "img": "media/K2_world.png",
+      "images": [
+        "media/K2_menu.png",
+        "media/K2_world.png",
+        "media/K2_game.png"
+      ]
+    },
+    {
       "name": "Inventory System",
       "desc": "Modular inventory system which handles items with DataStore. Supports stacking, item contexts, item data, item types and more.",
       "tags": [
