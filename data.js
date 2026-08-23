@@ -17,6 +17,22 @@ const DATA = {
       ]
     },
     {
+      "name": "Fog Volume",
+      "desc": "Volumetric fog and smoke system for Roblox. Fog is defined by simple tagged parts and rendered as camera-facing slices, with a wind-driven voxel density simulation so it flows around geometry, drapes over sloped terrain and settles into low ground.",
+      "tags": [
+        "Luau",
+        "Rendering",
+        "VFX"
+      ],
+      "yt": "",
+      "img": "media/fog_volume.png",
+      "images": [
+        "media/fog_volume.png",
+        "media/fog_volume2.png",
+        "media/fog_volume3.png"
+      ]
+    },
+    {
       "name": "Inventory System",
       "desc": "Modular inventory system which handles items with DataStore. Supports stacking, item contexts, item data, item types and more.",
       "tags": [
