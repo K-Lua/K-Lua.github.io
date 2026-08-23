@@ -1,118 +1,92 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Klua's Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/images/klua.png">
-    <link rel="stylesheet" href="assets/styles.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        #bg-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            min-width: 100vw;
-            min-height: 100vh;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            z-index: -1;
-            pointer-events: none;
-        }
-        main, header, footer, section, .cards {
-            background: rgba(32,34,37,0.82);
-            backdrop-filter: blur(2px);
-        }
-        main {
-            background: transparent;
-            box-shadow: none;
-            border-radius: 18px;
-            margin: 32px auto;
-            max-width: 1100px;
-        }
-        header, footer {
-            border-radius: 18px 18px 0 0;
-        }
-        section {
-            border-radius: 12px;
-            margin-bottom: 18px;
-        }
-        .cards {
-            background: transparent;
-            border-radius: 0;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klua's Portfolio</title>
+<meta name="description" content="Klua, Roblox and Lua developer. Systems-first scripting: inventories, quests, cave generation, SCP-079 and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="./dist/styles.css">
 </head>
 <body>
-    <video id="bg-video" autoplay loop muted playsinline>
-        <source src="assets/images/ThisisGMOD.mp4" type="video/mp4">
-    </video>
-    <header>
-        <h1>Klua's Portfolio</h1>
-        <nav>
-            <ul style="display:flex; align-items:center; gap:18px;">
-                <li><button class="button" onclick="location.href='about.html'">About Me</button></li>
-                <li>
-                    <a href="https://github.com/K-Lua" target="_blank" style="display:inline-block;">
-                        <img src="assets/images/Github.png" alt="Github" style="width:32px; height:32px; vertical-align:middle;">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://create.roblox.com/talent/creators/7833877231" target="_blank" style="display:inline-block;">
-                        <img src="assets/images/Roblox.png" alt="Roblox" style="width:32px; height:32px; vertical-align:middle;">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@KLua-c4j" target="_blank" style="display:inline-block;">
-                        <img src="assets/images/youtube.png" alt="YouTube" style="width:32px; height:32px; vertical-align:middle;">
-                    </a>
-                </li>
-                <li>
-                    <button id="discord-btn" style="background:none; border:none; cursor:pointer; padding:0;">
-                        <img src="assets/images/discord.png" alt="Discord" style="width:32px; height:32px; vertical-align:middle;">
-                    </button>
-                </li>
-            </ul>
-        </nav>
+
+<main>
+  <div class="mx-auto max-w-6xl px-6 pb-16 pt-12 sm:pb-24 sm:pt-16">
+    <h1 class="fx fx-title font-disp text-[clamp(4rem,14vw,11rem)] font-bold leading-[0.9] tracking-tight" data-text="Klua">Klua</h1>
+
+    <div class="mt-8 grid gap-8 md:grid-cols-[1fr_1fr]">
+      <p class="fx text-xl leading-relaxed text-balance">
+        I'm Klua, a passionate Roblox and Lua developer, building games
+        and systems that push the Roblox engine to its limits.
+      </p>
+      <p class="fx leading-relaxed text-soft">
+        Four years of Lua, backed by Git, SQL, and frontend and backend
+        development. Previously main scripter on Delve for a year, and
+        core developer at Civil Networks on SCP RP Site 65 &amp; Site 9,
+        three years and running.
+      </p>
+    </div>
+
+    <div class="fx mt-8 flex flex-wrap gap-3">
+      <button id="discordBtn" class="btn btn-ghost" title="Copy Discord username">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+        <span>k_lua_</span>
+      </button>
+      <a href="https://create.roblox.com/talent/creators/7833877231" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.926 23.998 0 18.892 5.075.002 24 5.108ZM15.348 10.09l-5.282-1.453-1.414 5.273 5.282 1.453Z"/></svg>
+        Roblox
+      </a>
+      <a href="https://github.com/K-Lua" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.youtube.com/@KLua-c4j" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+    </div>
+
+    <div class="fx mt-14 flex items-end justify-between">
+      <h2 class="sec-h">Index of works</h2>
+      <span class="font-code text-xs text-soft" id="entryCount"></span>
+    </div>
+    <div class="mt-4 flex flex-col" data-slot="projects"></div>
+
+    <div class="fx mt-16 flex items-end justify-between">
+      <h2 class="sec-h">Experience</h2>
+    </div>
+    <div class="mt-4 flex flex-col" data-slot="jobs"></div>
+
+    <div class="fx mt-16 flex items-end justify-between">
+      <h2 class="sec-h">Toolbox</h2>
+    </div>
+    <div class="fx mt-5 flex flex-wrap gap-2" data-slot="skills"></div>
+  </div>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-back" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <header class="modal-head">
+      <div class="min-w-0">
+        <p id="modalKicker" class="eyebrow"></p>
+        <h3 id="modalTitle" class="truncate font-disp text-xl font-bold"></h3>
+      </div>
+      <div class="flex shrink-0 items-center gap-2">
+        <button id="copyBtn" class="act" hidden>Copy</button>
+        <button class="modal-x" data-close aria-label="Close">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 2l10 10M12 2 2 12"/></svg>
+        </button>
+      </div>
     </header>
-    <main>
-        <section>
-            <h2>Projects</h2>
-            <div class="cards" id="projects-cards"></div>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <div class="cards" id="experience-cards"></div>
-        </section>
-    </main>
-    <footer>
-        <p>Klua's Portfolio</p>
-    </footer>
-    <script src="scripts/main.js"></script>
-    <script>
-        const discordBtn = document.getElementById('discord-btn')
-        discordBtn.onclick = function() {
-            navigator.clipboard.writeText('k_lua_').then(function() {
-                let notif = document.createElement('div')
-                notif.textContent = 'Copied to clipboard: k_lua_'
-                notif.style.position = 'fixed'
-                notif.style.top = '24px'
-                notif.style.right = '24px'
-                notif.style.background = '#23272a'
-                notif.style.color = '#fff'
-                notif.style.padding = '12px 24px'
-                notif.style.borderRadius = '8px'
-                notif.style.boxShadow = '0 2px 12px rgba(40,44,52,0.2)'
-                notif.style.zIndex = '9999'
-                notif.style.fontSize = '1rem'
-                document.body.appendChild(notif)
-                setTimeout(function() {
-                    notif.remove()
-                }, 1800)
-            })
-        }
-    </script>
+    <div id="modalBody" class="modal-body"></div>
+  </div>
+</div>
+
+<script src="./data.js"></script>
+<script src="./viewer.js"></script>
+<script src="./site.js"></script>
 </body>
 </html>
