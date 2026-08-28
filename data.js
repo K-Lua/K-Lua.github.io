@@ -1,6 +1,24 @@
 const DATA = {
   "projects": [
     {
+      "name": "Spider IK",
+      "desc": "Physics-driven spider with fully procedural leg animation. An analytic two- and three-bone IK solver places every joint each frame, choosing knee poles that keep the limb out of geometry and refining the ankle angle with a golden-section search. Around it sits a complete character: spring ride-height suspension, surface-aware foot planting, wall and ceiling climbing, charged jumps, ragdolls, burnable limbs that regrow, and zero-gravity handling. It runs a course of swings, launch pads, gravity and slow-motion fields, teleporters and checkpoints, all placed from a Studio plugin.",
+      "tags": [
+        "Luau",
+        "Inverse Kinematics",
+        "Procedural Animation"
+      ],
+      "yt": "",
+      "mp4": "media/SpiderIK.mp4",
+      "img": "media/SpiderIK.png",
+      "images": [
+        "media/SpiderIK2.png",
+        "media/SpiderIK3.png",
+        "media/SpiderIK4.png",
+        "media/SpiderIK5.png"
+      ]
+    },
+    {
       "name": "K2",
       "desc": "K2 is a 2D graphics engine I built for Roblox, rendering full 2D worlds inside a 3D engine. To prove it out, I built a RimWorld-style colony sim on top of it: scenario selection, procedural hex world generation with biomes, and top-down colony gameplay with colonists.",
       "tags": [
